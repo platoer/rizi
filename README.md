@@ -4,7 +4,7 @@
 
 Λ-Reading 是一份阅读摘要，包含但不限于阅读、新闻消费和科技等内容。
 
-''往期回顾：''
+往期回顾：
 - [Λ-Reading：没有谁是一座孤岛](https://rizime.substack.com/p/-reading-8be)
 - [Λ-Reading：中国今年的经济增长率预计仅为2%](https://rizime.substack.com/p/-reading2)
 - [Λ-Reading：世界变化的趋同性](https://rizime.substack.com/p/-reading-745)
