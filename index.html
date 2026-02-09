@@ -1,570 +1,411 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="zh-CN">
 <head>
-	<meta charset="utf-8">
-	<meta name="Author" content="Noah">
-	<meta name="Keywords" content="">
-	<meta name="Description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="shortcut icon"
-		href="https://avatars3.githubusercontent.com/u/38198082?s=460&u=e2da43cada61d365f96c9b280d46482e7b2510b8&v=4" />
-	<title>日子</title>
-	<meta name="keywords" content="Alejandro" />
-	<meta name="description" content="Alejandro" />
-	<style>
-		@font-face {
-			font-family: iconfont;
-			src: url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.eot?t=1584846914425);
-			src: url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.eot?t=1584846914425#iefix) format('embedded-opentype'), url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPcAAsAAAAACEAAAAOQAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDMgqDVIMaATYCJAMUCwwABCAFhG0HUhswBxEVnPHIfiZkcgn7O+8oo66bEbK2OpSJxjfBA+X1vslMtll8iBW0KuzdSry1J/JGpwASAA0EaO7O95urXT4WOkKV5Nojj7b4hwrpy2SO/v97p78xLfvYuvYslzWHLex8DDAOpEDHnGQljg3TC+cUPEjbIQAHqRRD1GvQzI2BgvQTgBjYr083jJQNVcMRGEZbyVSVKhajY2hztCvAIv178YYywgANXUJ2atW7fk9qmZi1ZMCSjnILC8fbDUAHJFAMUCCGl/oGIm2uGBKHP1RRC3BgoKGZmLxVUbOWZcWqHRkc9A8PBBKFBsIGKXUBUAvlFZhwBAGmhiDBLIqgwKyVRwPuKwAOWAjCWUxL9mpIWOWKcikVmuwiF0+49sx9/bnn5gvfDdO/at6eQHTP5dHLd8Z6V67btSPG061Q523w0S5OzYETx4QbT9zXbnmuP/bdvOsL9lwR2D031utePndvMM7nXRncNy/G4xvlEveE69fc4Tdu+AbcnOdxa4E98/bFyZV75+5WxGRRnfY0cEulpaqbVCzNtxTEU1P1m2J4tFGwJ7VcytpevcrWOXd44oCjAyZu3DXRvQxryi09PV2/BcVQIlRxZPWvAFhMXkb1qQ3bHPFvOVXxWI1TjTLPFjtT5smFsAtxVqK82CcvekwcsbMOHDh4wOBxYw4eZI+NVR+A6Vmx4bGz1ZI0XFw1r0mlXm20lW5RpWd+s0u/ijYZwarmHJsZVi+tXKjMlU2rm186Hlk6tFxaPfwAWLPk3380K2u4Qm6xtmaprTL4b/dj0Nu/F+qwat8MpwLgzvpfdbSsPbbVBj9Ijy//kxa1tAb7qAqUxK4rT8490qpVpxGATiESBDT4aTX/LxTJg3H0MbPIZMAgJgaNIqSAxCCbpGjFQMdJObBhUBMcFKXhbCdRDEcilB0oZAYAQTiHQCOU4yAJ5ypJ0e6DTizvwEa4kODAK6KWdJIrLP1uHgWtYqDuj3zPi2FOvTHlb7BpaiWp1NwvSPRJKrMiW3zFAhljRPy2laohIzzTC9gN08S0Cgf0mjnV9ZLnpuxDWc/z5oZHQasYqPsj3/NiZGO9yX3/DTZNrdQQ+qJfkOjbpzIrWpBedUsrwrXcEr9tpWrICM/0AjyYaI5pLe8U0GvmemTWS47qmba6bH7D/IybAAdkZV1oQgoldGHjYViCYPl3WKxb86g+On/sE/+kc/CLtS1vNg==') format('woff2'), url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.woff?t=1584846914425) format('woff'), url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.ttf?t=1584846914425) format('truetype'), url(//at.alicdn.com/t/font_1706200_3sgw4esvyq9.svg?t=1584846914425#iconfont) format('svg')
-		}
-
-		.iconfont {
-			font-family: iconfont !important;
-			font-size: 16px;
-			font-style: normal;
-			-webkit-font-smoothing: antialiased;
-			-moz-osx-font-smoothing: grayscale
-		}
-
-		.icon-querenzhengque:before {
-			content: "\e600"
-		}
-
-		.icon-tishi:before {
-			content: "\e640"
-		}
-
-		.icon-cuowu:before {
-			content: "\e602"
-		}
-
-		.icon-jinggao:before {
-			content: "\e62b"
-		}
-
-		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-			font-weight: 300
-		}
-
-		body,
-		body ::-webkit-input-placeholder {
-			font-family: Source Sans Pro, sans-serif;
-			color: #fff;
-			font-weight: 300
-		}
-
-		body :-moz-placeholder,
-		body ::-moz-placeholder {
-			font-family: Source Sans Pro, sans-serif;
-			color: #fff;
-			opacity: 1;
-			font-weight: 300
-		}
-
-		body :-ms-input-placeholder {
-			font-family: Source Sans Pro, sans-serif;
-			color: #fff;
-			font-weight: 300
-		}
-
-		a {
-			text-decoration: none
-		}
-
-		.wrapper {
-			background: #01a982;
-			background: linear-gradient(to bottom right, #01a982 0, #60ae80 100%);
-			overflow: hidden;
-		}
-
-		.bg-bubbles,
-		.wrapper {
-			position: absolute;
-			left: 0;
-			width: 100%;
-			height: 100%
-		}
-
-		.bg-bubbles {
-			top: 0;
-			z-index: 1
-		}
-
-		.bg-bubbles li {
-			position: absolute;
-			list-style: none;
-			display: block;
-			width: 40px;
-			height: 40px;
-			background-color: hsla(0, 0%, 100%, .15);
-			bottom: -160px;
-			animation: square 25s infinite;
-			transition-timing-function: linear
-		}
-
-		.bg-bubbles li:nth-child(1) {
-			left: 10%
-		}
-
-		.bg-bubbles li:nth-child(2) {
-			left: 20%;
-			width: 80px;
-			height: 80px;
-			animation-delay: 2s;
-			animation-duration: 17s
-		}
-
-		.bg-bubbles li:nth-child(3) {
-			left: 25%;
-			animation-delay: 4s
-		}
-
-		.bg-bubbles li:nth-child(4) {
-			left: 40%;
-			width: 60px;
-			height: 60px;
-			animation-duration: 22s;
-			background-color: hsla(0, 0%, 100%, .25)
-		}
-
-		.bg-bubbles li:nth-child(5) {
-			left: 70%
-		}
-
-		.bg-bubbles li:nth-child(6) {
-			left: 80%;
-			width: 120px;
-			height: 120px;
-			animation-delay: 3s;
-			background-color: hsla(0, 0%, 100%, .2)
-		}
-
-		.bg-bubbles li:nth-child(7) {
-			left: 32%;
-			width: 160px;
-			height: 160px;
-			animation-delay: 7s
-		}
-
-		.bg-bubbles li:nth-child(8) {
-			left: 55%;
-			width: 20px;
-			height: 20px;
-			animation-delay: 15s;
-			animation-duration: 40s
-		}
-
-		.bg-bubbles li:nth-child(9) {
-			left: 25%;
-			width: 10px;
-			height: 10px;
-			animation-delay: 2s;
-			animation-duration: 40s;
-			background-color: hsla(0, 0%, 100%, .3)
-		}
-
-		.bg-bubbles li:nth-child(10) {
-			left: 90%;
-			width: 160px;
-			height: 160px;
-			animation-delay: 11s
-		}
-
-		@keyframes square {
-			0% {
-				transform: translatey(0)
-			}
-
-			to {
-				transform: translatey(-700px) rotate(600deg)
-			}
-		}
-
-		@media (max-width:500px) {
-			.container h1 {
-				font-size: 60px
-			}
-
-			form button,
-			form input {
-				width: 500px
-			}
-		}
-
-		.main {
-			padding: 50px 0;
-			z-index: 999;
-			position: relative
-		}
-
-		.main h1 {
-			font-size: 40px;
-			text-align: center;
-			color: #fff;
-			margin-bottom: 30px;
-			text-transform: uppercase
-		}
-
-		.content {
-			margin: 0 auto;
-			width: 28%;
-			background: #fff;
-			border-radius: 5px
-		}
-
-		p.footer {
-			font-size: 16px;
-			text-align: center;
-			color: #fff;
-			font-weight: 500;
-			margin-top: 30px
-		}
-
-		p.footer a {
-			color: #55acee
-		}
-
-		p.footer a:hover {
-			color: #000;
-			transition: .5s all;
-			-webkit-transition: .5s all;
-			-moz-transition: .5s all;
-			-o-transition: .5s all;
-			-ms-transition: .5s all
-		}
-
-		.content-top h2 {
-			font-size: 22px;
-			color: #fff;
-			text-align: center;
-			background: #02a982;
-			padding: 12px 0;
-			border-radius: 5px
-		}
-
-		.content-top p {
-			text-align: center;
-			font-size: 16px;
-			color: #000;
-			margin-top: 15px
-		}
-
-		.content-top ul li {
-			display: block;
-			font-size: 15px;
-			color: #000;
-			line-height: 1.8em;
-			padding: 1em 0 1em 1em;
-			border-bottom: 1px solid #e2e0de
-		}
-
-		.content-top ul li a {
-			color: #000;
-			font-weight: 400
-		}
-
-		.content-top ul li a i {
-			color: #02a982;
-			font-style: normal;
-			display: block;
-			margin: 2px 0
-		}
-
-		.content-top ul li span {
-			display: block;
-			color: #999
-		}
-
-		.content-top {
-			padding: 1.5em
-		}
-
-		.content-top p a {
-			color: #55acee;
-			margin-left: 5px
-		}
-
-		@media (max-width:1366px) {
-			.content {
-				width: 31%
-			}
-		}
-
-		@media (max-width:1280px) {
-			.content {
-				width: 32%
-			}
-		}
-
-		@media (max-width:1080px) {
-			.content {
-				width: 38%
-			}
-
-			.main h1 {
-				font-size: 36px
-			}
-
-			.content-top h2 {
-				font-size: 20px;
-				padding: 10px 0
-			}
-
-			.content-top p,
-			.content-top ul li,
-			p.footer {
-				font-size: 14px
-			}
-		}
-
-		@media (max-width:800px) {
-			.main h1 {
-				font-size: 34px
-			}
-
-			.content {
-				width: 46%
-			}
-		}
-
-		@media (max-width:768px) {
-			.main {
-				padding: 90px 0
-			}
-
-			.main h1 {
-				margin-bottom: 55px
-			}
-
-			p.footer {
-				margin-top: 75px
-			}
-		}
-
-		@media (max-width:736px) {
-			.main {
-				padding: 70px 0
-			}
-
-			.main h1 {
-				margin-bottom: 45px
-			}
-
-			.content {
-				width: 53%
-			}
-
-			p.footer {
-				margin-top: 50px
-			}
-		}
-
-		@media (max-width:667px) {
-			.main h1 {
-				font-size: 32px;
-				margin-bottom: 35px
-			}
-
-			.main {
-				padding: 60px 0
-			}
-
-			.content {
-				width: 57%
-			}
-
-			.content-top h2 {
-				font-size: 18px
-			}
-		}
-
-		@media (max-width:600px) {
-			.main h1 {
-				font-size: 30px
-			}
-
-			.content-top {
-				padding: 1em
-			}
-
-			.content {
-				width: 62%
-			}
-		}
-
-		@media (max-width:568px) {
-			.content {
-				width: 68%
-			}
-		}
-
-		@media (max-width:480px) {
-			.content {
-				width: 78%
-			}
-
-			.main h1 {
-				font-size: 28px
-			}
-
-			p.footer {
-				margin-top: 42px
-			}
-		}
-
-		@media (max-width:414px) {
-			.content-top h2 {
-				font-size: 16px
-			}
-
-			.content {
-				width: 85%
-			}
-
-			.main {
-				padding: 50px 0
-			}
-
-			p.footer {
-				line-height: 1.8em;
-				margin: 42px auto 0;
-				width: 85%
-			}
-		}
-
-		@media (max-width:384px) {
-			.main h1 {
-				font-size: 27px
-			}
-
-			.content,
-			p.footer {
-				width: 90%
-			}
-
-			p.footer {
-				margin: 32px auto 0
-			}
-		}
-
-		@media (max-width:375px) {
-			.main h1 {
-				font-size: 26px;
-				margin-bottom: 25px
-			}
-
-			.main {
-				padding: 45px 0
-			}
-
-			.content,
-			p.footer {
-				width: 92%
-			}
-
-			.content-top h2 {
-				padding: 8px 0
-			}
-		}
-
-		@media (max-width:320px) {
-			.main h1 {
-				font-size: 24px;
-				margin-bottom: 30px
-			}
-
-			.content-top ul li {
-				padding: 1em 0 1em 1em;
-				background-size: 13% !important
-			}
-
-			.content-top {
-				padding: 1.2em
-			}
-
-			.content-top p,
-			.content-top ul li,
-			p.footer {
-				font-size: 13px
-			}
-
-			.content,
-			p.footer {
-				width: 90%
-			}
-		}
-
-		@media(max-width:500px) {
-
-			.bg-bubbles,
-			.wrapper {
-				height: auto;
-			}
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rizi - 简单的日子，就是幸福的日子">
+    <meta name="keywords" content="Rizi, 日子, 幸福">
+    <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/38198082?s=460&u=e2da43cada61d365f96c9b280d46482e7b2510b8&v=4" />
+    <title>简单的日子 · Rizi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0f0f0f;
+            --bg-card: #1a1a1a;
+            --text-primary: #f0f0f0;
+            --text-secondary: #888888;
+            --text-muted: #555555;
+            --accent: #e0c097;
+            --accent-hover: #f0d4a7;
+            --border: rgba(255, 255, 255, 0.08);
+            --shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 24px;
+            padding: 48px 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+            opacity: 0.5;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            border: 3px solid var(--accent);
+            padding: 3px;
+            background: var(--bg-card);
+            display: block;
+        }
+
+        .avatar img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 24px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            transition: all 0.25s ease;
+            text-decoration: none;
+        }
+
+        .link-item:hover {
+            background: rgba(224, 192, 151, 0.08);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .link-item:active {
+            transform: translateY(0);
+        }
+
+        .link-label {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .link-icon {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(224, 192, 151, 0.1);
+            border-radius: 8px;
+            color: var(--accent);
+            font-size: 14px;
+        }
+
+        .link-title {
+            font-size: 15px;
+            font-weight: 400;
+            color: var(--text-primary);
+        }
+
+        .link-url {
+            font-size: 13px;
+            color: var(--text-muted);
+            transition: color 0.25s ease;
+        }
+
+        .link-item:hover .link-url {
+            color: var(--accent);
+        }
+
+        .arrow {
+            color: var(--accent);
+            font-size: 12px;
+            transition: transform 0.25s ease;
+        }
+
+        .link-item:hover .arrow {
+            transform: translateX(4px);
+        }
+
+        /* Public.me 帖子样式 */
+        .public-post {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .public-post img {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: opacity 0.25s ease;
+        }
+
+        .public-post:hover img {
+            opacity: 1;
+        }
+
+        .public-post .link-url {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .loading-spinner {
+            width: 14px;
+            height: 14px;
+            border: 2px solid var(--text-muted);
+            border-top-color: var(--accent);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-text {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        /* 背景装饰 */
+        .bg-decoration {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .bg-circle {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--accent) 0%, transparent 70%);
+            opacity: 0.03;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .bg-circle:nth-child(1) {
+            width: 400px;
+            height: 400px;
+            top: -200px;
+            left: -200px;
+            animation-delay: 0s;
+        }
+
+        .bg-circle:nth-child(2) {
+            width: 300px;
+            height: 300px;
+            bottom: -150px;
+            right: -150px;
+            animation-delay: -10s;
+        }
+
+        .bg-circle:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            top: 50%;
+            left: 50%;
+            animation-delay: -5s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -30px) scale(1.1); }
+        }
+
+        /* 响应式 */
+        @media (max-width: 480px) {
+            body {
+                padding: 15px;
+            }
+
+            .card {
+                padding: 36px 24px;
+                border-radius: 20px;
+            }
+
+            .header {
+                margin-bottom: 36px;
+            }
+
+            .avatar {
+                width: 80px;
+                height: 80px;
+            }
+
+            .title {
+                font-size: 20px;
+            }
+
+            .subtitle {
+                font-size: 13px;
+            }
+
+            .link-item {
+                padding: 16px 18px;
+            }
+
+            .link-title {
+                font-size: 14px;
+            }
+
+            .link-url {
+                font-size: 12px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-	<div id="all">
-		<div class="wrapper">
-			<div class="main">
-				<h1></h1>
-				<div class="content">
-					<div class="content-top">
-						<h2>简单的日子，就是幸福的日子</h2>
-						<ul>
-							<li>
-								小日子
-								<a href="https://blog.rizi.me" target="_blank"><i>https://blog.rizi.me</i></a>
-								</span></span>
-							</li>
-							<li>
-								晨曦里的微光
-								<a href="" target="_blank"><i>等待中……</i></a>
-								</span></span>
-							</li>
-							<li>
-								^_^
-								<a href="mailto:coze@duck.com" target="_blank"><i>@rizi</i></a>
-								</span></span>
-							</li>
+    <div class="bg-decoration">
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+        <div class="bg-circle"></div>
+    </div>
 
-							
-						</ul>
+    <div class="container">
+        <div class="card">
+            <header class="header">
+                <div class="avatar">
+                    <img src="https://avatars3.githubusercontent.com/u/38198082?s=460&u=e2da43cada61d365f96c9b280d46482e7b2510b8&v=4" alt="Rizi">
+                </div>
+                <h1 class="title">简单的日子，就是幸福的日子</h1>
+                <p class="subtitle">Simple days, happy life</p>
+            </header>
 
-					</div>
-				</div>
-				<p class="footer">© Rizi </p>
-			</div>
-			<ul class="bg-bubbles">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-		</div>
-	</div>
-	<div style='display:none'>
-		<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-9XFD53STJ5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+            <nav class="links">
+                <a href="https://blog.rizi.me" target="_blank" class="link-item">
+                    <div class="link-label">
+                        <div class="link-icon">📖</div>
+                        <span class="link-title">小日子</span>
+                    </div>
+                    <span class="link-url">blog.rizi.me</span>
+                    <span class="arrow">→</span>
+                </a>
 
-  gtag('config', 'G-9XFD53STJ5');
-</script>
-	</div>
+                <a href="https://public.me/Jerry" target="_blank" class="link-item">
+                    <div class="link-label">
+                        <div class="link-icon">✨</div>
+                        <span class="link-title">晨曦里的微光</span>
+                    </div>
+                    <div class="public-post" id="public-me-container">
+                        <span class="link-url">public.me/Jerry</span>
+                    </div>
+                    <span class="arrow">→</span>
+                </a>
+
+                <a href="mailto:coze@duck.com" class="link-item">
+                    <div class="link-label">
+                        <div class="link-icon">✉️</div>
+                        <span class="link-title">联系我</span>
+                    </div>
+                    <span class="link-url">@rizi</span>
+                    <span class="arrow">→</span>
+                </a>
+            </nav>
+
+            <footer class="footer">
+                <p class="footer-text">© Rizi</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        (async function() {
+            const container = document.getElementById('public-me-container');
+            if (!container) return;
+
+            try {
+                const rssUrl = 'https://public.me/Jerry/rss.xml';
+                const rss2json = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rssUrl);
+                const response = await fetch(rss2json);
+                const data = await response.json();
+
+                if (data.items && data.items.length > 0) {
+                    const latestPost = data.items[0];
+                    const link = latestPost.link;
+
+                    const imgMatch = latestPost.description?.match(/<img[^>]+src="([^"]+)"[^>]*>/);
+
+                    if (imgMatch) {
+                        container.innerHTML = `
+                            <img src="${imgMatch[1]}" alt="" loading="lazy">
+                            <span class="link-url">最新动态</span>
+                        `;
+                    }
+                }
+            } catch (error) {
+                // 静默失败
+            }
+        })();
+
+        // Google Analytics
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-9XFD53STJ5');
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XFD53STJ5"></script>
 </body>
-
 </html>
